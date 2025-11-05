@@ -1,0 +1,47 @@
+/* About Section */
+.section.about {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section.about {
+    padding: 3rem 1.5rem;
+  }
+  .section.about h2 {
+    font-size: 1.8rem;
+  }
+  .section.about p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section.about {
+    padding: 2rem 1rem;
+  }
+  .section.about h2 {
+    font-size: 1.6rem;
+  }
+  .section.about p {
+    font-size: 0.95rem;
+  }
+}
