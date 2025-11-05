@@ -1,0 +1,14 @@
+.btn {
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+
+.conditional {
+  margin-top: 1rem;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

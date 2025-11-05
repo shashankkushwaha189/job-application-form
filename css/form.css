@@ -1,0 +1,107 @@
+.form-container {
+  max-width: 650px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-step {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+.form-step.active {
+  display: block;
+}
+
+.progress-bar {
+  width: 100%;
+  background: rgba(200, 200, 200, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  height: 10px;
+}
+#progress {
+  height: 10px;
+  background: var(--primary);
+  width: 25%;
+  border-radius: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  color: var(--text);
+  transition: all 0.25s ease;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+  background: #fff;
+}
+body.dark input,
+body.dark textarea {
+  background: rgba(30,30,30,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+button.next,
+button.prev {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button.next:hover,
+button.prev:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+#review {
+  background: rgba(255,255,255,0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+body.dark #review {
+  background: rgba(30,30,30,0.5);
+}
+
+.thankyou {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.thankyou h1 {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

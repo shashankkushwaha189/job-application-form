@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – HireSphere</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/thankyou.css">
+</head>
+<body>
+  <main class="thankyou">
+    <div class="success-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/>
+      </svg>
+    </div>
+    <h1>Thank You!</h1>
+    <p>Your application has been submitted successfully.<br>Our team will review it and contact you soon.</p>
+    <p class="countdown-text">Returning to the application page in <span id="countdown">10</span> seconds...</p>
+    <a href="index.html" class="btn btn--primary">Return Now</a>
+  </main>
+
+  <script>
+    // Countdown redirect script
+    let counter = 10;
+    const countdown = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      counter--;
+      countdown.textContent = counter;
+      if (counter === 0) {
+        clearInterval(timer);
+        window.location.href = "index.html";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
