@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: jobapplicationform
+    env: static
+    staticPublishPath: pages
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
